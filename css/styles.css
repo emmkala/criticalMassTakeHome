@@ -1,1 +1,43 @@
 /* styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.slider-nav {
+    display: flex;
+    margin: 10% 2%;
+    border-bottom: thin solid #b5b5b5;
+}
+
+.tabs-container {
+    width: 100%;
+    margin: 0 8%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.tab {
+    color: #b5b5b5;
+}
+
+.tab:not(.active):hover {
+    cursor: pointer;
+    color: #279af2;
+}
+
+.tab.active {
+    color: #000;
+}
+
+#slider {
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    width: 0;
+    left: 0;
+    transition: 0.4s;
+}
