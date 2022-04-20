@@ -7,12 +7,25 @@
         <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
-        <div class="slider-nav">
-            <div class="tabs-container">
-                <div class="tabs" id="tabs-section">
-                    <!-- The tab content is being dynamically created based on the json file -->
+        <div class="time-nav-container">
+            <div class="city-time-container">
+                <div class="clock">
+                    <div class="hand" id="hour"></div>
+                    <div class="hand" id="min"></div>
+                    <div class="hand" id="second"></div>
                 </div>
-                <div id="slider"></div>
+                <div class="time-text-container">
+                    <p class="time-text" id="city-name"></p>
+                    <p class="time-text" id="city-time"></p>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="tabs-container">
+                    <div class="tabs" id="tabs-section">
+                        <!-- Tabs are being dynamically created based on the json file -->
+                    </div>
+                    <div id="slider"></div>
+                </div>
             </div>
         </div>
     </body>
